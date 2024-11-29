@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+    }
+
+    .left {
+      flex: 1;
+      background: url('./welcome.jpg') no-repeat center center / cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .left::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6); /* Add a dark overlay */
+      z-index: 1;
+    }
+
+    .left-content {
+      position: relative;
+      z-index: 2;
+      max-width: 500px;
+    }
+
+    .left-content h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .left-content p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    .right {
+      flex: 1;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .header {
+      display: flex; /* Use flexbox for side-by-side layout */
+      align-items: center; /* Align items vertically */
+      justify-content: center; /* Center the content horizontally */
+      margin-bottom: 40px;
+    }
+
+    .header img {
+      height: 80px; /* Adjust size of the logo */
+      margin-right: 20px; /* Space between logo and text */
+    }
+
+    .header-text {
+      text-align: left;
+    }
+
+    .header-text h1 {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .header-text p {
+      font-size: 14px;
+      color: #555;
+      margin: 5px 0;
+      text-align: center;
+    }
+
+    .login-options {
+      text-align: center;
+    }
+
+    .login-options h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .login-button {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 200px;
+      padding: 10px 20px;
+      margin: 10px auto;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;
+      border-radius: 25px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .login-button img {
+      margin-right: 10px;
+      height: 24px;
+      width: 24px;
+    }
+
+    .login-button:hover {
+      transform: scale(1.05);
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Left Section -->
+    <div class="left">
+      <div class="left-content">
+        <h1>Welcome to the Portal</h1>
+        <p>Your one-stop platform for Lecturers and Students to connect and manage educational content seamlessly.</p>
+      </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right">
+      <div class="header">
+        <img src="./Vignan_logo.png" alt="Institute Logo">
+        <div class="header-text">
+          <h1>VIGNAN INSTITUTE OF TECHNOLOGY AND SCIENCE</h1>
+          <p>Approved by AICTE, New Delhi, Autonomous, Hyderabad</p>
+          <p>EAMCET Code: VGNT</p>
+        </div>
+      </div>
+      <div class="login-options">
+        <h2>Login as</h2>
+        <a href="./lecturer_login.html" class="login-button">
+          <img src="./lecturer-icon.png" alt="Lecturer Icon"> Lecturer
+        </a>
+        <a href="./stud_login.html" class="login-button">
+          <img src="./student-icon.png" alt="Student Icon"> Student
+        </a>
+        <a href="./admin.html" class="login-button">
+          <img src="./admin-icon.png" alt="Admin Icon"> Admin
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

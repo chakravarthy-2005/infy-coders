@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clickable Cards</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f4f4f9;">
+
+  <div style="display: flex; gap: 20px;">
+    <!-- Add New Regulation Card -->
+    <a href="./add_reg_n_yr.html" style="text-decoration: none;">
+      <div style="background: #007bff; color: #fff; width: 300px; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;">
+        <h2 style="margin-bottom: 10px; font-size: 20px;">Add New Regulation and Subject</h2>
+        <p style="margin: 0; font-size: 14px;">Click to add new regulations or subjects to the system.</p>
+      </div>
+    </a>
+
+    <!-- Modify Existing Regulation Card -->
+    <a href="./modify_sub.html" style="text-decoration: none;">
+      <div style="background: #28a745; color: #fff; width: 300px; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;">
+        <h2 style="margin-bottom: 10px; font-size: 20px;">Modify Existing Regulation or Subject</h2>
+        <p style="margin: 0; font-size: 14px;">Click to edit existing regulations or subjects in the system.</p>
+      </div>
+    </a>
+  </div>
+
+  <script>
+    // Optional: Add hover effect for cards
+    document.querySelectorAll('div[style]').forEach(card => {
+      card.addEventListener('mouseover', () => {
+        card.style.transform = 'scale(1.05)';
+        card.style.boxShadow = '0 6px 12px rgba(0, 0, 0, 0.2)';
+      });
+      card.addEventListener('mouseout', () => {
+        card.style.transform = 'scale(1)';
+        card.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+      });
+    });
+  </script>
+</body>
+</html>

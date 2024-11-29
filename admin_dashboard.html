@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+
+    .dashboard-container {
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #007bff;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    .action-btn {
+      padding: 6px 12px;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .activate-btn {
+      background-color: #28a745;
+    }
+
+    .activate-btn:hover {
+      background-color: #218838;
+    }
+
+    .deactivate-btn {
+      background-color: #dc3545;
+    }
+
+    .deactivate-btn:hover {
+      background-color: #c82333;
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard-container">
+    <h1>Admin Dashboard</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Regulation</th>
+          <th>Lecturer Name</th>
+          <th>Subject</th>
+          <th>Data Logs</th>
+          <th>Account Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Example Rows -->
+        <tr>
+          <td>R22</td>
+          <td>Sk. Khaleel</td>
+          <td>Java</td>
+          <td>Uploaded: 5 PDFs<br>Modified: 2 PDFs<br>Deleted: 1 PDF</td>
+          <td>
+            <button class="action-btn activate-btn">Activate</button>
+            <button class="action-btn deactivate-btn">Deactivate</button>
+          </td>
+        </tr>
+        <tr>
+          <td>R22</td>
+          <td>Dr. M. Prabhakar</td>
+          <td>Software Engineering</td>
+          <td>Uploaded: 3 PDFs<br>Modified: 1 PDF<br>Deleted: 0 PDFs</td>
+          <td>
+            <button class="action-btn activate-btn">Activate</button>
+            <button class="action-btn deactivate-btn">Deactivate</button>
+          </td>
+        </tr>
+        <tr>
+          <td>R22</td>
+          <td>Sai Bhaskar Kashyapa</td>
+          <td>Node JS/Django</td>
+          <td>Uploaded: 9 PDFs<br>Modified: 3 PDF<br>Deleted: 2 PDFs</td>
+          <td>
+            <button class="action-btn activate-btn">Activate</button>
+            <button class="action-btn deactivate-btn">Deactivate</button>
+          </td>
+        </tr>
+        <!-- Add dynamic rows here -->
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
